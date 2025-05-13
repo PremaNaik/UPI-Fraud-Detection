@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #4CAF50; }
+        p { font-size: 18px; }
+        a { color: #4CAF50; text-decoration: none; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p><strong>Message:</strong> {{ message }}</p>
+    <p><strong>Prediction:</strong> <span style="color: {% if prediction == 'spam' %}red{% else %}green{% endif %};">{{ prediction.upper() }}</span></p>
+    <br>
+    <a href="/">Check another message</a>
+</body>
+</html>
