@@ -1,2 +1,7 @@
-# UPI-Fraud-Detection
-A machine learning project to detect UPI fraud transactions using the Random Forest algorithm.
+The UPI Fraud Detection System is a machine learning–based project designed to identify fraudulent UPI transactions by analyzing transaction-related data and message content. With the rapid growth of digital payments, fraudulent activities such as phishing messages, fake payment alerts, and scam transactions have become increasingly common. This project aims to automatically detect such frauds and improve the security of UPI-based transactions.
+
+The system uses a Random Forest classification algorithm to distinguish between legitimate and fraudulent transactions. It is trained on a dataset containing UPI transaction messages and related features, where each record is labeled as either genuine or fraud. Before training the model, the transaction messages are preprocessed using Natural Language Processing (NLP) techniques such as text cleaning and vectorization (TF-IDF), enabling the model to understand hidden patterns in message content.
+
+Once trained, the model analyzes new or unseen UPI transaction messages and predicts whether they are safe or suspicious. Random Forest is chosen for this task because it combines multiple decision trees, making the system robust, accurate, and less prone to overfitting. The trained model is saved and reused for fast and consistent fraud detection without retraining each time.
+
+This project helps in early identification of fraudulent transactions, reducing financial loss and increasing trust in digital payment platforms. It demonstrates the practical application of machine learning and NLP in real-world financial security systems and can be extended further for real-time fraud detection in banking and payment applications.
