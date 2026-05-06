@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Spam Detection</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input[type="text"] { width: 100%; padding: 10px; margin: 10px 0; }
+        button { padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>UPI Spam Detection</h1>
+    <p>Enter a UPI message to check if it is Spam or Ham (Legitimate).</p>
+    <form action="/predict" method="POST">
+        <input type="text" name="message" placeholder="Enter UPI message..." required>
+        <button type="submit">Check Spam/Ham</button>
+    </form>
+</body>
+</html>
